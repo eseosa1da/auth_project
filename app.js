@@ -13,8 +13,7 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 
-const dburl =
-  "mongodb+srv://eseosa:1212Dec7@tpdbcluster.mytts.mongodb.net/userDB";
+const dburl = process.env.DB_CONNECT;
 
 
 
